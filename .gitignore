@@ -1,0 +1,22 @@
+# Archivos y carpetas ignorados
+# Datos sin procesar
+data/raw/
+data/processed/
+data/external/
+
+# Modelos entrenados
+model/*.pkl
+model/*.h5
+mlruns/ # Logs de MLflow
+
+# Entornos virtuales
+venv/
+.venv/
+__pycache__/
+
+# Notebooks ejecutadas temporalmente
+.ipynb_checkpoints
+
+# Archivos de sistema/SO
+.DS_Store
+Thumbs.db
