@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  # Servicio de Base de Datos (PostgreSQL)
+  postgres:
+    image: postgres:15
+    container_name: churn_db
+    environment:
+      POSTGRES_USER: user_churn
+      POSTGRES_PASSWORD: password_churn
+      POSTGRES_DB: churn_db
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - churn_network
+
+  # (Opcional) Interfaz gráfica para ver la BD en el navegador
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: churn_pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@churn.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "5050:80"
+    depends_on:
+      - postgres
+    networks:
+      - churn_network
+
+volumes:
+  postgres_data:
+
+networks:
+  churn_network:
+
