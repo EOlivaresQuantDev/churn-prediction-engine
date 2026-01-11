@@ -1,4 +1,4 @@
-# 📉 Churn Prediction Engine (Olist E-commerce)
+#  Churn Prediction Engine (Olist E-commerce)
 
 Este proyecto es una solución End-to-End de **Machine Learning** para predecir el abandono de clientes (Churn) en un entorno de E-commerce.
 
@@ -6,7 +6,7 @@ Utiliza datos reales de **Olist (Brasil)** para entrenar un modelo de **Random F
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * **Lenguaje:** Python 3.9
 * **ML Core:** Scikit-Learn, Pandas, Numpy.
@@ -17,7 +17,7 @@ Utiliza datos reales de **Olist (Brasil)** para entrenar un modelo de **Random F
 
 ---
 
-## 📂 Estructura del Proyecto
+##  Estructura del Proyecto
 
 ```text
 churn-project/
